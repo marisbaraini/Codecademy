@@ -1,3 +1,4 @@
+///Whale talk project
 let input = 'i love taylor swift'
 const vowels = ['a', 'e', 'i', 'o', 'u']
 
@@ -9,14 +10,12 @@ for (let index = 0; index < input.length; index++){
   if (input[index] === 'u') {
     resultArray.push(input[index])
   }
-  for (let vowelsIndex = 0; vowelsIndex < vowels.length; vowelsIndex++ )
-  if (input[index] === vowels[vowelsIndex])
-   ///console.log(input[index]) 
-   {
-   /// or console.log(`input index is ${input[index]}`)
-  resultArray.push(vowels[vowelsIndex])
-  console.log(resultArray)
-}
+  for (let vowelsIndex = 0; vowelsIndex < vowels.length; vowelsIndex++){
+    if (input[index] === vowels[vowelsIndex]){
+      resultArray.push(vowels[vowelsIndex])
+      console.log(resultArray)
+    }
+  }
 }
 
 let resultString = resultArray.join('').toUpperCase()
